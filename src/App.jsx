@@ -5,6 +5,7 @@ import Dashboard from './pages/Dashboard'
 import Students from './pages/Students'
 import Announcements from './pages/Announcements'
 import Tests from './pages/Tests'
+import Dpps from './pages/Dpps'
 import Schedule from './pages/Schedule'
 import Materials from './pages/Materials'
 import Syllabus from './pages/Syllabus'
@@ -29,6 +30,7 @@ export default function App() {
         <Route path="students"      element={<Students />} />
         <Route path="announcements" element={<Announcements />} />
         <Route path="tests"         element={<Tests />} />
+        <Route path="dpps"          element={<Dpps />} />
         <Route path="schedule"      element={<Schedule />} />
         <Route path="materials"     element={<Materials />} />
         <Route path="syllabus"      element={<Syllabus />} />

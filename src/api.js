@@ -124,6 +124,16 @@ export const getAttendance = (batchId, date) =>
 export const markAttendance = (batchId, date, records) =>
   post('/coaching/attendance', { batchId, date, records });
 
+// ── DPPs ─────────────────────────────────────────────────────────────────────
+export const getDpps = (batchId) =>
+  get(`/dpp/batch/${batchId}`);
+
+export const createDpp = (batchId, data) =>
+  post('/dpp', { coachingId: coachingId(), batchId, createdBy: adminPhone(), ...data });
+
+export const deleteDpp = (dppId) =>
+  del(`/dpp/${dppId}`);
+
 // ── Analytics ─────────────────────────────────────────────────────────────────
 export const getLeaderboard = (batchId) =>
   get(`/coaching/leaderboard?batchId=${batchId}&phone=${adminPhone()}`);

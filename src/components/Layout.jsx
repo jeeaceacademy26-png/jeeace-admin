@@ -6,6 +6,7 @@ const nav = [
   { to: '/students',      label: 'Students',       icon: '👥' },
   { to: '/announcements', label: 'Announcements',  icon: '📢' },
   { to: '/tests',         label: 'Tests',          icon: '📝' },
+  { to: '/dpps',          label: 'DPPs',           icon: '✏️' },
   { to: '/schedule',      label: 'Schedule',       icon: '🗓️' },
   { to: '/materials',     label: 'Materials',      icon: '📁' },
   { to: '/syllabus',      label: 'Syllabus',       icon: '📚' },
