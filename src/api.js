@@ -176,3 +176,13 @@ export const getFeePayments = (batchId) =>
 
 export const confirmPayment = (paymentId, confirmedBy) =>
   post('/fee/confirm', { paymentId, confirmedBy });
+
+// ── Doubts ────────────────────────────────────────────────────────────────────
+export const getDoubts = (batchId, status) =>
+  get(`/coaching/doubts?batchId=${batchId}${status ? `&status=${status}` : ''}`);
+
+export const replyDoubt = (doubtId, text) =>
+  post(`/coaching/doubts/${doubtId}/reply`, { repliedBy: adminPhone(), text });
+
+export const closeDoubt = (doubtId) =>
+  put(`/coaching/doubts/${doubtId}/close`, {});

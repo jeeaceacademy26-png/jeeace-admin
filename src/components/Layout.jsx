@@ -13,6 +13,7 @@ const nav = [
   { to: '/attendance',    label: 'Attendance',     icon: '✅' },
   { to: '/analytics',     label: 'Analytics',      icon: '📈' },
   { to: '/fees',          label: 'Fees',           icon: '💰' },
+  { to: '/doubts',        label: 'Doubts',         icon: '❓' },
 ]
 
 export default function Layout() {

@@ -12,6 +12,7 @@ import Syllabus from './pages/Syllabus'
 import Attendance from './pages/Attendance'
 import Analytics from './pages/Analytics'
 import Fees from './pages/Fees'
+import Doubts from './pages/Doubts'
 
 function isLoggedIn() {
   return !!localStorage.getItem('adminPhone') && !!localStorage.getItem('coachingId')
@@ -38,6 +39,7 @@ export default function App() {
         <Route path="attendance"    element={<Attendance />} />
         <Route path="analytics"     element={<Analytics />} />
         <Route path="fees"          element={<Fees />} />
+        <Route path="doubts"        element={<Doubts />} />
       </Route>
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
