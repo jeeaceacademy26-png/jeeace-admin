@@ -12,6 +12,7 @@ const nav = [
   { to: '/syllabus',      label: 'Syllabus',       icon: '📚' },
   { to: '/attendance',    label: 'Attendance',     icon: '✅' },
   { to: '/analytics',     label: 'Analytics',      icon: '📈' },
+  { to: '/fees',          label: 'Fees',           icon: '💰' },
 ]
 
 export default function Layout() {

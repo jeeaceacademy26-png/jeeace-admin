@@ -140,3 +140,25 @@ export const getLeaderboard = (batchId) =>
 
 export const getScoreHistory = (batchId) =>
   get(`/coaching/score-history?batchId=${batchId}&phone=${adminPhone()}`);
+
+// ── Fee Management ────────────────────────────────────────────────────────────
+export const getFeePlans = (batchId) =>
+  get(`/fee/plans?batchId=${batchId}`);
+
+export const createFeePlan = (batchId, data) =>
+  post('/fee/plans', { coachingId: coachingId(), batchId, ...data });
+
+export const deleteFeePlan = (id) =>
+  del(`/fee/plans/${id}`);
+
+export const assignFeePlan = (phone, batchId, feePlanId) =>
+  post('/fee/assign', { phone, batchId, feePlanId });
+
+export const getFeeStatus = (batchId) =>
+  get(`/fee/status?batchId=${batchId}`);
+
+export const getFeePayments = (batchId) =>
+  get(`/fee/payments?batchId=${batchId}`);
+
+export const confirmPayment = (paymentId, confirmedBy) =>
+  post('/fee/confirm', { paymentId, confirmedBy });
