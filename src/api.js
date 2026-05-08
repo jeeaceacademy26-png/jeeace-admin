@@ -85,8 +85,22 @@ export const postAnnouncement = (batchId, text, isPinned) =>
 export const getTests = (batchId) =>
   get(`/coaching/tests?batchId=${batchId}&phone=${adminPhone()}`);
 
+export const getTest = (testId) =>
+  get(`/coaching/tests/${testId}?phone=${adminPhone()}`);
+
 export const createTest = (batchId, data) =>
   post('/coaching/tests', { coachingId: coachingId(), batchId, ...data });
+
+export const deleteTest = (testId) =>
+  del(`/coaching/tests/${testId}`);
+
+export const getTestAttempts = (testId, batchId) =>
+  get(`/coaching/tests/${testId}/attempts?batchId=${batchId}`);
+
+export const searchQuestions = (params) => {
+  const q = new URLSearchParams(params).toString();
+  return get(`/questions/random?${q}`);
+};
 
 // ── Schedule ──────────────────────────────────────────────────────────────────
 export const getSchedule = (batchId) =>
