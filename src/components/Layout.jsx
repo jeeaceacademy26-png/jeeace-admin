@@ -39,7 +39,7 @@ export default function Layout() {
         {/* Logo */}
         <div className="px-5 py-5 border-b border-gray-100">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center text-white font-black text-lg">J</div>
+            <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center text-white font-black text-lg">PB</div>
             <div>
               <p className="text-sm font-bold text-gray-900 leading-tight">{coachingName}</p>
               {batchName && <p className="text-xs text-gray-400">{batchName}</p>}
@@ -86,7 +86,7 @@ export default function Layout() {
           <button className="lg:hidden p-2 rounded-lg hover:bg-gray-100" onClick={() => setOpen(true)}>
             <span className="text-xl">☰</span>
           </button>
-          <span className="text-sm font-semibold text-gray-700 flex-1">JEEAce Admin</span>
+          <span className="text-sm font-semibold text-gray-700 flex-1">PadhaloBhai Admin</span>
           <span className="text-xs text-gray-400">{localStorage.getItem('adminPhone')}</span>
         </header>
 

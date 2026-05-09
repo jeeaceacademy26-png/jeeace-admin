@@ -31,8 +31,8 @@ export default function Login() {
       <div className="w-full max-w-sm">
         {/* Logo */}
         <div className="text-center mb-8">
-          <div className="w-16 h-16 rounded-2xl bg-primary flex items-center justify-center text-white font-black text-3xl mx-auto mb-4 shadow-lg shadow-indigo-200">J</div>
-          <h1 className="text-2xl font-bold text-gray-900">JEEAce Admin</h1>
+          <div className="w-16 h-16 rounded-2xl bg-primary flex items-center justify-center text-white font-black text-xl mx-auto mb-4 shadow-lg shadow-indigo-200">PB</div>
+          <h1 className="text-2xl font-bold text-gray-900">PadhaloBhai Admin</h1>
           <p className="text-sm text-gray-500 mt-1">Coaching Management Portal</p>
         </div>
 
@@ -72,7 +72,7 @@ export default function Login() {
         </div>
 
         <p className="text-center text-xs text-gray-400 mt-6">
-          JEEAce · Admin Portal · Only for authorized staff
+          PadhaloBhai · Admin Portal · Only for authorized staff
         </p>
       </div>
     </div>
